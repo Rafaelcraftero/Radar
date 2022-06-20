@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	id="WebApp_ID" version="4.0">
+	<display-name>asd</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+	<servlet>
+		<servlet-name>ServletSimple</servlet-name>
+		<servlet-class>es.us.lsi.dad.ServletSimple</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>ServletLogin</servlet-name>
+		<servlet-class>es.us.lsi.dad.ServletLogin</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ServletSimple</servlet-name>
+		<url-pattern>/ServletSimple</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>ServletLogin</servlet-name>
+		<url-pattern>/ServletLogin</url-pattern>
+	</servlet-mapping>
+</web-app>
